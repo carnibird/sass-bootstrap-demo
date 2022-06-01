@@ -99,3 +99,28 @@ npm run compile-css
 Noter la taille "légèrement" augmentée du fichier css de sortie.
 
 ### Ouvrir le index.html dans le navigateur
+
+
+### Créer un fichier de variables d'override de la lib bootstrap
+
+On l'a appelé ``bootstrap-override-variables.scss`` et placé au même niveau que style.scss
+
+### Importer le fichier d'overrides
+
+Il faut le placer au DESSUS de l'import de bootstrap, comme ceci:
+
+```sass
+@import "bootstrap-override-variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+```
+
+### Override des variables
+
+La doc qui en parle est là: https://getbootstrap.com/docs/5.2/customize/sass/
+
+On va customiser le bouton mis précédemment, à l'aide de la doc du composant button
+https://getbootstrap.com/docs/5.2/components/buttons/#sass-variables
+et de la doc sur les couleurs
+https://getbootstrap.com/docs/5.2/customize/color/
+
+Tous les futurs boutons auront les nouvelles valeurs de propriété par défaut.
