@@ -53,12 +53,49 @@ décomposé:
 
 Tous ces noms sauf ``sass`` sont customisables
 
-### Utilisation du script
+### Exécution du script de compilation
 
 ```bash
 npm run compile-css
 ```
 
 Le fichier dans ``css`` doit être écrasé par les modifications apportées
+
+### Ouvrir le index.html dans le navigateur
+
+
+### Install Bootstrap
+
+```bash
+npm install --save bootstrap
+```
+
+### Importer tout bootstrap
+
+Il est possible d'importer uniquement la partie qu'on veut, mais pour la simplicité, on importe tout.
+Ajouter le code suivant en haut du fichier styles.scss
+
+```sass
+@import "node_modules/bootstrap/scss/bootstrap";
+```
+
+Noter l'absence de ``.scss`` à la fin, ça fait pourtant référence au fichier bootstrap.scss du dossier.
+
+### Utiliser bootstrap
+
+Ajouter un composant html et le décorer avec une classe bootstrap.
+On a choisi ici un simple bouton:
+
+```html
+<button type="button" class="btn btn-primary">Bouton</button>
+```
+
+### Exécution du script de compilation
+
+```bash
+npm run compile-css
+```
+
+Noter la taille "légèrement" augmentée du fichier css de sortie.
 
 ### Ouvrir le index.html dans le navigateur
