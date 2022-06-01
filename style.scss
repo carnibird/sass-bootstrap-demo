@@ -1,0 +1,18 @@
+div.simple {
+  background-color: red;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+
+  &:hover {
+    background-color: green;
+
+    > .inner-div {
+      background: orange;
+    }
+  }
+
+  > .inner-div {
+    background: yellow;
+  }
+}

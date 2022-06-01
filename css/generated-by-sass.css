@@ -1,0 +1,17 @@
+div.simple {
+  background-color: red;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+div.simple:hover {
+  background-color: green;
+}
+div.simple:hover > .inner-div {
+  background: orange;
+}
+div.simple > .inner-div {
+  background: yellow;
+}
+
+/*# sourceMappingURL=generated-by-sass.css.map */
